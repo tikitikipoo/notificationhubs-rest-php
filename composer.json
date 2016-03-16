@@ -1,12 +1,12 @@
 {
-    "name": "openpp/notificationhubs-rest-php",
+    "name": "tikitikipoo/notificationhubs-rest-php",
     "type": "library",
     "description": "Microsoft Azure Notification Hub library for PHP",
     "keywords": ["push", "notificationhub", "openpp", "azure"],
     "license": "MIT",
     "authors": [
         {
-            "name": "webware,Inc."
+            "name": "tikitikipoo"
         }
     ],
     "require": {
