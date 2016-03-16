@@ -100,7 +100,7 @@ class NotificationHub
         $token = $this->generateSasToken($uri);
         $headers = array_merge(array('Authorization: ' . $token), $notification->getHeaders());
 
-        $this->request(self::METHOD_POST, $uri, $headers, $notification->getPayload());
+        return $this->request(self::METHOD_POST, $uri, $headers, $notification->getPayload());
     }
 
     /**
