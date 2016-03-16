@@ -307,6 +307,10 @@ class NotificationHub
             throw new \RuntimeException('Error sending request: ' . $info['http_code'] . ' msg: ' . $response);
         }
 
-        return $response;
+        if ($response) {
+            return $response;
+        }
+
+        return $info;
     }
 }
